@@ -10,35 +10,42 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-	<nav id="upperbar">
-		<div id="button">
+	
+	<div id="topnav">
+		<div id="button" onclick="topButton()">
 			<div class="button-line"></div>
 			<div class="button-line"></div>
 			<div class="button-line"></div>
 		</div>
-		<ul>
-			<li><i class="fas fa-phone"></i> (06) --- --- --</li>
-			<li><i class="fab fa-whatsapp"></i> (06) --- --- --</li>
-			<li><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</li>
-			<li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
-			<li><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter-square"></i></li>
-		</ul>
-	</nav>
 
-	<nav id="lowerbar">
-		<div id="button2">
+		<nav id="upperbar">
+			<ul id="myLinks">
+				<li class="uplinks"><i class="fas fa-phone"></i> (06) --- --- --</li>
+				<li class="uplinks"><i class="fab fa-whatsapp"></i> (06) --- --- --</li>
+				<li class="uplinks"><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</li>
+				<li class="uplinks"><i class="fas fa-tachometer-alt"></i> <a href="#">Dashboard</a></li>
+				<li class="uplinks"><a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter-square"></i></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="bottomnav">
+		<div id="button2" onclick="botButton()">
 			<div class="button-line2"></div>
 			<div class="button-line2"></div>
 			<div class="button-line2"></div>
 		</div>
-		<ul>
-			<li>AUTORIJBEWIJS</li>
-			<li>MOTORRIJBEWIJS</li>
-			<li>THEORIELES</li>
-			<li>OPFRIS CURSUS</li>
-			<li>CONTACT</li>
-		</ul>
-	</nav>
+
+		<nav id="lowerbar">
+			<ul id="myBLinks">
+				<li class="downlinks"><a href="#">AUTORIJBEWIJS</a></li>
+				<li class="downlinks"><a href="#">MOTORRIJBEWIJS</a></li>
+				<li class="downlinks"><a href="#">THEORIELES</a></li>
+				<li class="downlinks"><a href="#">OPFRIS CURSUS</a></li>
+				<li class="downlinks"><a href="#">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
 
 <div class="w3-content w3-display-container" style="max-width:1920px">
   <img class="mySlides" src="img/img1.jpeg" style="width:100%">
@@ -89,6 +96,8 @@
 		 <iframe src="https://www.youtube.com/embed/-LIhqaqeXUU" > </iframe> 
 	</div>	
 </div>
+
+<footer>Danny Kamman</footer>
 
 <script type="text/javascript" src="js/js.js"></script>
 </body>
